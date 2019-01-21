@@ -36,3 +36,8 @@ CTRL-I -> go forward
 :#,#s/old/new/g -> between lines #,#
 :%s/old/new/g -> globally
 :%s/old/new/gc -> globally with prompt
+:!command -> executes shell commands
+:w filename -> writes file
+v motion :w filename -> visual selection
+:r FILENAME -> insert contents of file
+:r !command -> insert command content

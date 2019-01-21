@@ -22,5 +22,17 @@ U -> undo line changes
 CTRL-R -> redo (undo the undo's)
 p -> put line below
 r -> replace the character with x
-c -> works like d and goest into insert mode
-
+c -> works like d and goes into insert mode
+G -> bottom of the file (224G moves to line 224)
+gg -> top of the file
+CTRL-G -> shows filename and position in the file at the bottom
+/ -> search (n -> next, N -> prev)
+? -> backwards search
+CTRL-O -> go back to where you came from
+CTRL-I -> go forward
+% -> find matching ), ], }
+:s/old/new -> substitutes new for old
+:s/old/new/g -> line
+:#,#s/old/new/g -> between lines #,#
+:%s/old/new/g -> globally
+:%s/old/new/gc -> globally with prompt

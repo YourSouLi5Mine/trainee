@@ -14,4 +14,13 @@ Motions
 w -> until the start of the next word
 e -> to the end of the current word
 $ -> to the end of the line
+Number repeat motions that many times
+0 -> to the start of the line
+dd -> delete line
+u -> undo
+U -> undo line changes
+CTRL-R -> redo (undo the undo's)
+p -> put line below
+r -> replace the character with x
+c -> works like d and goest into insert mode
 

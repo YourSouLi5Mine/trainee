@@ -1,0 +1,17 @@
+What I've learned from vim: 
+h -> left
+j -> down
+k -> up
+l -> right
+:q! -> quit without saving
+x -> delete the character under the cursor
+A -> append text
+i -> insert text
+:wq -> save file and exit
+Operators
+d -> delete
+Motions
+w -> until the start of the next word
+e -> to the end of the current word
+$ -> to the end of the line
+

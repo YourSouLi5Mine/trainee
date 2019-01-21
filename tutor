@@ -3,41 +3,45 @@ h -> left
 j -> down
 k -> up
 l -> right
-:q! -> quit without saving
-x -> delete the character under the cursor
-A -> append text
-i -> insert text
-:wq -> save file and exit
+:q! -> Quit force
+x -> delete character
+A -> Append text
+i -> Insert text before character
+:wq -> Write and Quit 
 Operators
-d -> delete
+d -> Delete
 Motions
-w -> until the start of the next word
-e -> to the end of the current word
-$ -> to the end of the line
+w -> beginning of next Word
+$ -> end of line 
 Number repeat motions that many times
-0 -> to the start of the line
+0 -> start of line 
 dd -> delete line
-u -> undo
+u -> Undo
 U -> undo line changes
-CTRL-R -> redo (undo the undo's)
-p -> put line below
-r -> replace the character with x
-c -> works like d and goes into insert mode
-G -> bottom of the file (224G moves to line 224)
-gg -> top of the file
-CTRL-G -> shows filename and position in the file at the bottom
-/ -> search (n -> next, N -> prev)
+CTRL-R -> Re-do (undo the undo's)
+p -> Paste
+r -> Replace character 
+c -> Cut (like d), insert mode afterwards
+G -> Go to bottom of the file (224G go to line 224)
+gg -> go to top of the file
+CTRL-G -> shows filename and position of the cursor 
+/ -> search (n -> Next, N -> prev)
 ? -> backwards search
 CTRL-O -> go back to where you came from
 CTRL-I -> go forward
 % -> find matching ), ], }
 :s/old/new -> substitutes new for old
-:s/old/new/g -> line
+:s/old/new/g -> all matches on the line
 :#,#s/old/new/g -> between lines #,#
 :%s/old/new/g -> globally
 :%s/old/new/gc -> globally with prompt
-:!command -> executes shell commands
-:w filename -> writes file
-v motion :w filename -> visual selection
-:r FILENAME -> insert contents of file
-:r !command -> insert command content
+:!command -> executes shell Commands
+:w filename -> Writes file
+v motion :w filename -> Visual selection
+:r FILENAME -> Read and insert contents of file
+:r !command -> Read and insert command content
+o -> Open line below (lowercase) and goes into insert mode
+O -> Open line above (uppercase)
+a -> insert text After the cursor
+R -> Replace more than one character
+y -> copy text (Yank)

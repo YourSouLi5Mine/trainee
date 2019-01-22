@@ -45,3 +45,9 @@ O -> Open line above (uppercase)
 a -> insert text After the cursor
 R -> Replace more than one character
 y -> copy text (Yank)
+:set ic -> ignore case, noic 
+:set hls -> highlight search, :nohlsearch
+:set is -> incremental search, :noic
+:help -> help window
+CTRL-W CTRL-W -> change window
+CTRLD-D -> when typing a command : it will show possible completions. <TAB> to autocomplete

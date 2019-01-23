@@ -34,3 +34,6 @@ This command will replace all matches in the file.
 This command will replace all matches too, but will ask for confirmation first.
 `:%s/ReplaceThis/ForThis/gc
 
+### Exiting Vim
+For exit from Vim execute `:q`
+For exit and save execute `:wq`

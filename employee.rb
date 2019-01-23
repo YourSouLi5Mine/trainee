@@ -13,4 +13,8 @@ class Employee
 		@earnings += amount
 		"Payment #{amount} was successful current earnings is #{@earnings}
 	end
+
+        def work(time)
+          puts time        
+        end
 end

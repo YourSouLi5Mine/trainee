@@ -1,7 +1,7 @@
 # Vim notes 📔
 
 ## Modes
-In Vim we some modes when we are editing a document.
+In Vim we have three modes when we are editing a file.
 
 1. Command mode.
 2. Insert mode.
@@ -10,12 +10,11 @@ In Vim we some modes when we are editing a document.
 ### Command mode
 > To access this mode, press `ESC`.
 
-In the command mode we will be able to press keyboard keys en do some commands wwith them, for
-example, if we press `dd`, the current line where the cursor is will be deleted (now would be copied
-to clipboard and could be pasted bye peressing `p`).
+In the command mode we will be able to press keyboard keys and execute some commands with them, for
+example, if we press `dd`, the current line, where the cursor is, will be deleted (now would be copied
+to clipboard and could be pasted bye pressing `p` key).
 
-This is an image with many commands:
-
+This is the CheatSheet fot Vim commands:
 ![Vim Cheat Sheet](./images/cheat_sheet.png)
 
 ### Insert mode

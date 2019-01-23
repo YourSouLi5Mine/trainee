@@ -14,6 +14,10 @@ In the command mode we will be able to press keyboard keys en do some commands w
 example, if we press `dd`, the current line where the cursor is will be deleted (now would be copied
 to clipboard and could be pasted bye peressing `p`).
 
+This is an image with many commands:
+
+![Vim Cheat Sheet](./images/cheat_sheet.png)
+
 ### Insert mode
 > To access this mode enter to `Command mode`, then press `i`.
 

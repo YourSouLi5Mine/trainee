@@ -11,6 +11,6 @@ class Employee
 	
 	def pay(amount)
 		@earnings += amount
-		"Payment #{amount} was successful current earnings is #{@earnings}
+		"Payment #{amount} was successful current earnings is #{@earnings}"
 	end
 end

@@ -13,4 +13,8 @@ class Employee
 		@earnings += amount
 		"Payment #{amount} was successful current earnings is #{@earnings}
 	end
+
+        def code
+          puts 'this employee codes'
+        end
 end

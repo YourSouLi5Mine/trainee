@@ -56,7 +56,22 @@ squash a5f4a0d added cat-file
 Commands:
  p, pick = use commit
  e, edit = use commit, but stop for amending
- s, squash = use commit, but meld into previous commit test 
+ s, squash = use commit, but meld into previous commit
 
 If you remove a line here THAT COMMIT WILL BE LOST.
-However, if you remove everything, the rebase will be aborted**
+However, if you remove everything, the rebase will be aborted*
+
+**Staging interactive/patch**
+
+*Pretty much the same as the last concept. Patch allows you to commit some lines in the same file to
+modularize commits*
+
+git rebase -i <commit>
+git rebase -p <commit>
+
+p, pick = use commit
+r, reword = use commit, but edit the commit message
+e, edit = use commit, but stop for amending
+s, squash = use commit, but meld into previous commit
+f, fixup = like "squash", but discard this commit's log message
+x, exec = run command (the rest of the line) using shell

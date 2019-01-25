@@ -22,3 +22,10 @@ git commit -m "messageName"
 git log
 git log --oneline
 git log --graph
+
+**Moving around commits**
+
+It allows you to move into the history of the files.
+
+*Example*
+git checkout SHA1

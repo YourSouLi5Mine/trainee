@@ -40,3 +40,23 @@ git reset --mixed <commit> **Let's you decide between --soft and --hard interact
 git reset --hard <commit> **Files stay as the prev commit from the one you selected. The
 opposite from soft**
 git revert <commit> **Delete commit changes in a new commit to don't lose the prev commits**
+
+**Squash commits**
+
+You can rewrite the history of the commits in git
+
+*Example*
+git commit --ammend **You can change the name of the commit, or the files edited, deleted, added or modified**
+git rebase -i <commit> **Squash joins multiple commits on the same one**
+
+*pick f7f3f6d changed my name a bit
+squash 310154e updated README formatting and added blame
+squash a5f4a0d added cat-file
+
+Commands:
+ p, pick = use commit
+ e, edit = use commit, but stop for amending
+ s, squash = use commit, but meld into previous commit test 
+
+If you remove a line here THAT COMMIT WILL BE LOST.
+However, if you remove everything, the rebase will be aborted**

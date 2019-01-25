@@ -1,4 +1,3 @@
-git: distributed version control software developed by Linus Torvalds
-.gitignore: especifies which files and directories won't be uploaded from the local repository to the remote one
+**Git**
 
-
+Git is an open source program for tracking changes in text files, and is the core technology that GitHub, the social and user interface, is built on top of.

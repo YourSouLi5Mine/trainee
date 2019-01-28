@@ -12,7 +12,7 @@ else
 
   registers = []
   begin
-      print('registry> ')
+    print('registry> ')
     registers.push(STDIN.gets)
     print('Do you want to add another registry? (y/N)')
   end while(['y', 'Y'].include?(STDIN.gets[0]))

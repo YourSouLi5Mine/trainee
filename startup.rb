@@ -9,19 +9,12 @@ class Startup
   end
 
   def valid_title?(title)
-     if salaries.has_key?(title)
-      return true
-     else
-      return false
-     end
+     salaries.has_key?(title) ? true : false
   end
 
   def >(other_startup)
-     if self.funding > other_startup.funding
-      return true
-     else
-      return false
-     end
+     self.funding > other_startup.funding ? true : false
+    
   end
 
   def hire(name, title)

@@ -1,6 +1,6 @@
 class Startup
 
-  attr_reader :salaries, :name, :funding, :employees
+  attr_accessor :salaries, :name, :funding, :employees
   def initialize(name, funding, salaries)
     @name = name
     @funding = funding
@@ -9,11 +9,11 @@ class Startup
   end
 
   def valid_title?(title)
-     salaries.has_key?(title) ? true : false
+     @salaries.has_key?(title) 
   end
 
   def >(other_startup)
-     self.funding > other_startup.funding ? true : false
+     self.funding > other_startup.funding
     
   end
 
@@ -29,8 +29,8 @@ class Startup
   def pay_employee(employee)
     raise 'Not enough founds to pay' if @salaries[employee.title] > @funding
     if @funding >= @salaries[employee.title]
-      employee.pay(@salaries[employee.title])
-      @funding -= @salaries[employee.title]
+      	employee.pay(@salaries[employee.title])
+      	@funding -= @salaries[employee.title]
     end
   end
 

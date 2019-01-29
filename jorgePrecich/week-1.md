@@ -106,3 +106,8 @@ git cherry-pick --quit
 3. Use slashes to separate parts of your branch names.
 4. Do not use bare numbers as leading parts.
 5. Avoid long descriptive names for long-lived branches.
+
+**Delete branch**
+
+git branch -d local_branch
+git push origin --delete <remote_name> <remote_branch_name>

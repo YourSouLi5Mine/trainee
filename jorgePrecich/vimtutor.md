@@ -1,3 +1,7 @@
+# VimTutor Practice
+
+### Just type vimtutor in your terminal to start practicing vim! 😎
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			     Lesson 1 SUMMARY
 
@@ -17,7 +21,6 @@
 
 NOTE: Pressing <ESC> will place you in Normal mode or will cancel
       an unwanted and partially completed command.
-
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,7 +50,6 @@ NOTE: Pressing <ESC> will place you in Normal mode or will cancel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			       Lesson 3 SUMMARY
 
-
   1. To put back text that has just been deleted, type   p .  This puts the
      deleted text AFTER the cursor (if a line was deleted it will go on the
      line below the cursor).
@@ -65,12 +67,9 @@ NOTE: Pressing <ESC> will place you in Normal mode or will cancel
 
 Now go on to the next lesson.
 
-
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			       Lesson 4 SUMMARY
-
 
   1. CTRL-G  displays your location in the file and the file status.
              G  moves to the end of the file.
@@ -95,7 +94,6 @@ Now go on to the next lesson.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			       Lesson 5 SUMMARY
 
-
   1.  :!command  executes an external command.
 
       Some useful examples are:
@@ -113,7 +111,6 @@ Now go on to the next lesson.
 
   5.  :r !dir  reads the output of the dir command and puts it below the
       cursor position.
-
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -143,7 +140,6 @@ Now go on to the next lesson.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			       Lesson 7 SUMMARY
 
-
   1. Type  :help  or press <F1> or <Help>  to open a help window.
 
   2. Type  :help cmd  to find help on  cmd .
@@ -157,12 +153,4 @@ Now go on to the next lesson.
   6. When typing a  :  command, press CTRL-D to see possible completions.
      Press <TAB> to use one completion.
 
-
-
-
-
-
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-

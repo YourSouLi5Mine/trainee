@@ -128,3 +128,9 @@ Integrate commits from one branch into another
 Conflicts occur when competing changes are made to the same line of a file, or when one person edits
 a file and the other deletes it. Conflicts can be solved via git status and doing manually the
 changes on the files conflicted.
+
+**Stash**
+
+Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+
+git stash

@@ -79,3 +79,12 @@ x, exec = run command (the rest of the line) using shell
 **Branch**
 
 A branch is a parallel version of a repository. It is contained within the repository, but does not affect the primary or master branch allowing you to work freely without disrupting the "live" version. When you've made the changes you want to make, you can merge your branch back into the master branch to publish your changes. For more information, see "About branches."
+
+**Git remote**
+
+This is the version of something that is hosted on a server, most likely GitHub. It can be connected to local clones so that changes can be synced. You can add, delete and have more than one remote. For example to upload to GitHub and GitLab
+
+git branch -r **Lists remote branches**
+git remote **Lists remotes names**
+git remote add <name> <url>
+git remote rm <name> <url>

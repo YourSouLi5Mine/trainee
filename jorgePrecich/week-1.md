@@ -98,3 +98,11 @@ git cherry-pick <commit> *You can select multiple commits divided by space*
 git cherry-pick --continue
 git cherry-pick --abort
 git cherry-pick --quit
+
+**Branch naming conventions**
+
+1. Use grouping tokens (words) at the beginning of your branch names.
+2. Define and use short lead tokens to differentiate branches in a way that is meaningful to your workflow.
+3. Use slashes to separate parts of your branch names.
+4. Do not use bare numbers as leading parts.
+5. Avoid long descriptive names for long-lived branches.

@@ -122,3 +122,9 @@ The remote branches are the ones hosted on something like GitHub
 Integrate commits from one branch into another
 
 ![rebaseVSmerge](https://www.yveslange.ch/wp-content/uploads/2016/01/merge-vs-rebase.jpg)
+
+**Solving conflicts**
+
+Conflicts occur when competing changes are made to the same line of a file, or when one person edits
+a file and the other deletes it. Conflicts can be solved via git status and doing manually the
+changes on the files conflicted.

@@ -14,6 +14,10 @@ class Employee
 		"Payment #{amount} was successful current earnings is #{@earnings}"
 	end
 
+        def code
+          puts 'this employee codes'
+        end
+
         def work(time)
           puts time        
 	end

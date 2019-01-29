@@ -5,19 +5,27 @@ just assign values to them, this has its odds and cons.
 ## Dynamic typing (Ruby)
 ```ruby
 age = 22
+puts age
 age = 23
-age = 'Ricardo'
-
-# Ruby is ok with this, types are not an issue.
+puts age
+age = 'Ricardo' # No error
+puts age# Ruby is ok with this, types are not an issue.
 ```
 
 ## Static typing (C++)
 ```cpp
-int age = 22;
-age = 23;
-age = "Ricardo"; // ERROR
+#include <iostream>
+using namespace std;
 
-// C++ has not dynamic typing, so, it will produce an error, we need to use another variable.
+int main() {
+  int age = 22;
+  cout << "age:" << age << endl;
+  age = 23;
+  cout << "age:" << age << endl;
+  age = "Ricardo"; // Expected error here.
+  cout << age;
+  return 0;
+}// C++ has not dynamic typing, so, it will produce an error, we need to use another variable.
 ```
 
 ## Real example

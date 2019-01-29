@@ -88,3 +88,13 @@ git branch -r **Lists remote branches**
 git remote **Lists remotes names**
 git remote add <name> <url>
 git remote rm <name> <url>
+
+**Pulling commits from another branch**
+
+Whenever you need individual or a set of commits you can `cherry-pick` the desired commits to your
+branch.
+
+git cherry-pick <commit> *You can select multiple commits divided by space*
+git cherry-pick --continue
+git cherry-pick --abort
+git cherry-pick --quit

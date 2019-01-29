@@ -22,5 +22,5 @@ age = "Ricardo"; // ERROR
 
 ## Real example
 Here's an example of the output of above codes.
-![dynamic vs static typing](./images/dynamic_vs_static.png)
+![dynamic vs static typing](../images/dynamic_vs_static.png)
 

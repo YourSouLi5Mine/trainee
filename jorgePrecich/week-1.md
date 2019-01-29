@@ -116,3 +116,9 @@ git push origin --delete <remote_name> <remote_branch_name>
 
 The local branches are the ones where you work in your local computer.
 The remote branches are the ones hosted on something like GitHub
+
+**Rebase/merge**
+
+Integrate commits from one branch into another
+
+![rebaseVSmerge](https://www.yveslange.ch/wp-content/uploads/2016/01/merge-vs-rebase.jpg)

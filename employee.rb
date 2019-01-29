@@ -20,5 +20,9 @@ class Employee
 
         def work(time)
           puts time        
+	end
+
+        def code
+          puts 'this employee codes'
         end
 end

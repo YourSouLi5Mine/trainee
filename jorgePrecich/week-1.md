@@ -111,3 +111,8 @@ git cherry-pick --quit
 
 git branch -d local_branch
 git push origin --delete <remote_name> <remote_branch_name>
+
+**Difference between local and remote branches**
+
+The local branches are the ones where you work in your local computer.
+The remote branches are the ones hosted on something like GitHub

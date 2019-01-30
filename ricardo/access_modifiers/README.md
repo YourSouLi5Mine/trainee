@@ -18,15 +18,14 @@ prefix, here are the prefixes:
 $global_var = 'Hello from outside'
 
 class Person
-  def initialize
-    ## heres if in any instance @@greet is modified, all instances will get the same value from this
-    variable
-    @@greet = 'greeting from class (everyone should get the same info)'
-    @message = 'This is unique for instance'
-  end
-
   def self.greet
     'Greeting from Class'
+  end
+
+  def initialize
+    ## heres if in any instance @@greet is modified, all instances will get the same value from this variable
+    @@greet = 'greeting from class (everyone should get the same info)'
+    @message = 'This is unique for instance'
   end
 
   def greet

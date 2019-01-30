@@ -1,8 +1,10 @@
+require 'snake_camel'
+
 if ARGV.length < 2
   puts "You need to write at least 2 values -> ClassName, Attribute"
 else
-  class_name = ARGV.shift().capitalize
-  attributes = ARGV.map! { |x| x.to_sym }
+  class_name = ARGV.shift().camelcase
+  attributes = ARGV.map! { |x| x.snakecase.to_sym }
   Struct.new(class_name, *attributes)
   puts "You just created a #{class_name} class"
   puts "With #{attributes} attributes"

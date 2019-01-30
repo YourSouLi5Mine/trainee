@@ -17,9 +17,7 @@ class Training
     print 'The course will take 3 months length and is free'
   end
 
-
   attr_reader :teachers, :name, :students, :grades
-
   def initialize(name, student_capacity)
     @name = name
     @student_capacity = student_capacity
@@ -33,8 +31,12 @@ class Training
   end
 
   def enroll_course(student_name)
-    @student_capacity > @students.length ? @students << student_name : false
-    print "#{student_name} was added to course successfuly, Current student capacity is #{@student_capacity -= 1}"
+    if @student_capacity > @students.length
+      @students << student_name 
+      print "#{student_name} was added successfully"
+    else
+      print 'Course if already full'
+    end
   end
 
   def is_enrolled?(student_name)
@@ -42,13 +44,7 @@ class Training
   end
 
   def add_grade(name, grade)
-    if is_enrolled?(name)
-      @grades[name] << (grade)
-      return true
-    else
-      print "Student #{name}, doesn't belong to current course"
-      return false
-    end
+    is_enrolled?(name) ? @grades[name] << (grade) : "Student #{name}, doesn't belong to current course"
   end
 
   def num_grades(name)
@@ -59,10 +55,10 @@ class Training
     unless is_enrolled?(name) || num_grades(name).nil?
       nil
     else
-      sum = 0
-      @grades[name].each { |num| sum += num }
-      print "Average grade of #{name} is #{sum / @grades[name].length} "
-      sum / @grades[name].length
+      sum = @grades[name].reduce(0) { |acc, num| acc + num }
+      average = sum / @grades[name].length
+      print "Average grade of #{name} is #{average}"
+      average
     end
   end
 end

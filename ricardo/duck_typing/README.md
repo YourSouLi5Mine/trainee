@@ -23,11 +23,11 @@ This class doesn't follow duck typing rule. ❌
 ```ruby
 class Duck
   def bark
-    'Duck's quacki... wait, what?'
+    'Duck\'s quacki... wait, what?'
   end
 
   def appearance
-    'Yup, it also looks like a Duck, look at him 🦄, oh, wait, that's an unicorn
+    'Yup, it also looks like a Duck, look at him 🦄, oh, wait, that\'s an unicorn'
   end
 end
 ```

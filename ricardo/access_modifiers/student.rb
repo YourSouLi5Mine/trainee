@@ -14,4 +14,16 @@ class Student < Application
     class_room_students.map(&:class_room)
   end
 
+  def subjects
+    class_rooms.map(&:subject)
+  end
+
+  def teachers
+    class_room_students.map(&:teacher)
+  end
+
+  def info
+    { name: @name, school: $school[:name] }
+  end
+
 end

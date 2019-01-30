@@ -11,6 +11,10 @@ Dir.entries(path).each do |file|
   end
 end
 
+$school = {
+  name: 'TangoSource Trainee Program Institute (TTPI)'
+}
+
 memo = Teacher.new('Guillermo', 10)
 omaury = Teacher.new('Omaury', 10)
 

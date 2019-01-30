@@ -13,5 +13,13 @@ class Teacher < Application
   def experience
     p "#{@name} has #{@years_of_experience} years of experience."
   end
+
+  def students
+    class_rooms.map(&:students).flatten
+  end
+
+  def subjects
+    class_rooms.map(&:subject)
+  end
 end
 

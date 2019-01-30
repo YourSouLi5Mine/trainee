@@ -7,10 +7,18 @@ class Subject < Application
     @credits = credits
 
     setup
-    has_many('class_room', ClassRoom)
+    has_many('class_rooms', ClassRoom)
   end
 
   def self.credits
     all.reduce(0) { |acc, s| acc + s.credits }
+  end
+
+  def teachers
+    class_rooms.map(&:teacher)
+  end
+
+  def students
+    class_rooms.map(&:students).flatten
   end
 end

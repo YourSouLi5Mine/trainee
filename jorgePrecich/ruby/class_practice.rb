@@ -5,11 +5,11 @@ class Dog
     @breed = breed
   end
 
-  def age()
+  def age
     puts @age
   end
 
-  def breed()
+  def breed
     puts @breed
   end
 end

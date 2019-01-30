@@ -4,6 +4,14 @@ class Application
     @@records[self.to_s]
   end
 
+  def self.first
+    @@records[self.to_s].first
+  end
+
+  def self.last
+    @@records[self.to_s].last
+  end
+
   private
 
   def setup

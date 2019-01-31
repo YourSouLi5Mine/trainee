@@ -1,5 +1,6 @@
 class Array
   def pretty
-    JSON.pretty_generate(self)
+    puts JSON.pretty_generate(self)
+    self
   end
 end

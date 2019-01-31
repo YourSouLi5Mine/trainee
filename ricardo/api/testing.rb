@@ -10,5 +10,3 @@ end
 
 api = ApiClient.new('https://api.github.com')
 
-p api.user
-

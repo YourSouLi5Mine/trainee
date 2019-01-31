@@ -3,6 +3,10 @@ class Hash
     methods = []
     self.each do |option|
       methods.push({ name: option.first, action: option.last })
+
+      #if /[a-z_]+_url$/ === option.first
+        #methods.push({ name: option.first.gsub('_url', ''), action: ApiClient.get(option.last) })
+      #end
     end
     struct = Struct.new("Objectized#{self.object_id}")
     methods.each do |method|

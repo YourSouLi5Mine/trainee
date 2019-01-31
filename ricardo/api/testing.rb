@@ -8,5 +8,3 @@ Dir.entries(path).each do |file|
   end
 end
 
-api = ApiClient.new('https://api.github.com')
-

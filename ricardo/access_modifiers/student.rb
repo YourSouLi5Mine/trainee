@@ -1,4 +1,5 @@
 class Student < Application
+  print "#{self} load Done. ✅ \n"
   attr_reader :id
   attr_accessor :name, :age
 

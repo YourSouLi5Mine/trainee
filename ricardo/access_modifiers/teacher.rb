@@ -1,4 +1,5 @@
 class Teacher < Application
+  print "#{self} load Done. ✅ \n"
   attr_reader :id
   attr_accessor :name, :yaers_of_experience, :class_rooms
 

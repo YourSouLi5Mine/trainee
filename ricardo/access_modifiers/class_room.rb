@@ -1,4 +1,5 @@
 class ClassRoom < Application
+  print "#{self} load Done. ✅ \n"
   attr_reader :id
   attr_accessor :name, :teacher_id, :subject_id
 

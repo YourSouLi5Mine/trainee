@@ -1,4 +1,5 @@
 class ClassRoomStudent < Application
+  print "#{self} load Done. ✅ \n"
   attr_reader :id
   attr_accessor :class_room_id, :student_id
   def initialize(class_room, student)

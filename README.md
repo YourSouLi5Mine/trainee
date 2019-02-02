@@ -21,5 +21,5 @@
 1. Scrum ✅
 2. Ruby 🕐
 
-### `Talk is cheap. Show me the code`
-### > Linus torvalds
+`"Talk is cheap. Show me the code"`
+> Linus torvalds

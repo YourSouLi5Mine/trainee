@@ -10,9 +10,3 @@ Dir.entries(path).each do |file|
   end
 end
 
-token_response = GetToken.new.request_token
-api_consumer = ApiConsumer.new(token_response[0], token_response[1])
-uri = api_consumer.artist('3RNrq3jvMZxD9ZyoOZbQOD')
-request = api_consumer.request(uri)
-puts request
-

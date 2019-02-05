@@ -14,11 +14,11 @@ module Starwarsgem
     get("/planets/#{planet_id}/.json")
   end
 
-  def self.get_species(specie_id)
+  def self.find_species(specie_id)
     get("/species/#{specie_id}/.json")
   end
 
-  def self.get_starships(starship_id)
+  def self.find_starships(starship_id)
     get("/starship/#{starship_id}/.json")
   end
 
@@ -29,10 +29,6 @@ module Starwarsgem
 
 
   private
-
-    # def retrieve_response(response)
-    #   response.parsed_response
-    # end
 end
 
 

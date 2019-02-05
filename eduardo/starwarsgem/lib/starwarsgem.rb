@@ -10,7 +10,7 @@ module Starwarsgem
     get("/#{type}/#{id}/.json")
   end
 
-  def self.get_planet(planet_id = 3)
+  def self.find_planet(planet_id = 3)
     get("/planets/#{planet_id}/.json")
   end
 

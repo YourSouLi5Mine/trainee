@@ -11,18 +11,18 @@ class Api
   end
 
   def get(slug = '')
-    uri = get_uri(slug)
-    req = new_req(uri)
+    uri = parse_url(slug)
+    req = request(uri)
     req["Authorization"] = @auth 
     res(uri, req)
   end
 
   private
-  def get_uri(slug = '')
+  def parse_url(slug = '')
     URI.parse(@url + slug)
   end
 
-  def new_req(uri)
+  def request(uri)
     Object.const_get("Net::HTTP::#{@method}").new(uri)
   end
 

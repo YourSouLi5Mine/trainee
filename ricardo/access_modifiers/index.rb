@@ -1,15 +1,11 @@
 require_relative './application.rb'
+require 'active_support'
 
-path = File.expand_path File.dirname(__FILE__)
-
-# Load all classes
-Dir.entries(path).each do |file|
-  if file =~ /^[a-z_]+.rb/
-    print "Loading #{file}..."
-    require_relative file
-    print " Done. ✅ \n"
-  end
-end
+autoload :ClassRoomStudent, './class_room_student'
+autoload :ClassRoom, './class_room'
+autoload :Subject, './subject'
+autoload :Student, './student'
+autoload :Teacher, './teacher'
 
 $school = {
   name: 'TangoSource Trainee Program Institute (TTPI)'

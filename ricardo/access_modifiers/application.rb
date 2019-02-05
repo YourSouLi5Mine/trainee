@@ -1,4 +1,5 @@
 class Application
+  print "#{self} load Done. ✅ \n"
   require 'snake_camel'
   def self.all
     @@records[self.to_s]

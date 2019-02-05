@@ -1,4 +1,5 @@
 class Subject < Application
+  print "#{self} load Done. ✅ \n"
   attr_reader :id
   attr_accessor :name, :credits
 

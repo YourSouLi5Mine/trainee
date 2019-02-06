@@ -1,12 +1,16 @@
-require 'pry'
+require          'active_support'
+require_relative 'hash'
 
 path = File.expand_path File.dirname(__FILE__)
-Dir.entries(path).each do |file|
-  next if file == 'test.rb'
-  if file =~ /^[a-z_]+.rb/
-    print "Just found the #{file} file."
-    require_relative file
-    puts " Aaaaand the file it's loaded! 🗳"
-  end
-end
+
+autoload :Token, "#{path}/token"
+autoload :Client, "#{path}/client"
+
+puts 'Welcome to the Spotify Api Client'
+puts '1.- Create a token -> token = Token.new.token'
+puts '2.- Create a client -> client = Client.new(token)'
+puts '3.- Get info -> client.method("id").pretty'
+puts 'Possible methods to get info:'
+puts 'album, album_tracks, artist, artist_albums, artist_top, track, analysis'
+
 

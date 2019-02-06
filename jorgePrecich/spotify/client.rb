@@ -40,6 +40,12 @@ class Client
     get(parse_url("/audio-analysis/#{id}"))
   end
 
+  def search(search, type)
+    uri = parse_url("/search")
+    uri.query = "q=#{search}&type=#{type}"
+    get(uri) 
+  end
+
   private
   def get(uri)
     req = request(uri)

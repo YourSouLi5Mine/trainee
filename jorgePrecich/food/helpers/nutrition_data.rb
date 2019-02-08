@@ -1,4 +1,6 @@
 module NutritionData
+  puts 'NutritionData loaded!'
+
   def change_molecule(molecule)
     equation = user_input
     molecule = molecule.send(equation[:operator], equation[:number])

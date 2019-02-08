@@ -4,6 +4,8 @@ autoload :Fruit, "#{path}/fruit"
 autoload :Meat, "#{path}/meat"
 
 class ManualRegistry
+  puts 'ManualRegistry loaded!'
+
   def fruit(name, proteins, carbs)
     $fruits << Fruit.new(name, proteins, carbs)
   end

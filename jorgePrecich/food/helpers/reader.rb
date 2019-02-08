@@ -1,13 +1,12 @@
 module Reader
+  puts 'Reader loaded!'
+
   require 'csv'
 
-  def read(&block)
-    CSV.foreach("/Users/ysim/code/trainee/jorgePrecich/food/csv/food.csv") do |row|
-      binding.pry
+  def read(path, &block)
+    CSV.foreach(path) do |row|
+      next if row[0] == 'name' 
       block.call(row)
     end
-    # generate(
   end
-
-  # def generate
 end

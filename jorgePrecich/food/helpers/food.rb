@@ -1,6 +1,6 @@
 path = File.expand_path File.dirname(__FILE__)
 
-autoload :RegistryCSV, "#{path}/nutrition_data"
+autoload :NutritionData, "#{path}/nutrition_data"
 
 class Food
   puts 'Food loaded!'
